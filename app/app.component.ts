@@ -64,9 +64,9 @@ export class App {
     const date = moment([moment().year(), firstStudyMonth, firstStudyDay, 0, 0]).day(course.day_number);
 
     // shift the date of first course day by a week for second-week schedule
-    if (course.lesson_week === '2') {
-        date.add(7, 'day');
-    }
+    //if (course.lesson_week === '2') {
+      //  date.add(7, 'day');
+    //}
 
     // date.day() can move the date backwards. If it did move the date to august - fix it back to september.
     if (date.date() > 14 && !isSecondSemester) {
